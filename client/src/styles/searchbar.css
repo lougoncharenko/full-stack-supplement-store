@@ -1,0 +1,9 @@
+.search-parent {
+    display: flex;
+    justify-content: center;
+   }
+   
+   .search-child {
+     margin: 30px;
+     width: 30%;
+   }
