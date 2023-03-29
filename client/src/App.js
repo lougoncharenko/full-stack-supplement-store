@@ -1,5 +1,5 @@
 
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import './App.css';
 import { Route, Routes } from "react-router-dom"
 import SignIn from './pages/SignIn';
@@ -15,19 +15,17 @@ function App() {
   const [supplementDetail, setSupplementDetail] = useState({});
   const [cartItems, setCartItems] = useState([]);
   const [data, setData] = useState(null)
-  
-  const onAdd = (product) => {
-    const exist = cartItems.find((x) => x.id === product.id);
-    if (exist) {
-      setCartItems(
-        cartItems.map((x) =>
-          x.id === product.id ? { ...exist, qty: exist.qty + 1 } : x
-        )
-      );
-    } else {
-      setCartItems([...cartItems, { ...product, qty: 1 }]);
-    }
-  };
+  const [cart, setCart] = useState(null)
+
+  useEffect(()=> {
+    console.log("data is fetching")
+    async function fetchData() {
+    const res = await fetch("http://localhost:3001/data", {mode: "cors"})
+    const json = await res.json() 
+    setData(json)
+    console.log("data is fetching")
+  } fetchData()
+  }, [])
 
   return (
     <>
@@ -37,8 +35,8 @@ function App() {
       <Route path="/sign-in" element={<SignIn/>} />
       <Route path="/sign-up" element={<SignUp/>}/>
       <Route path="/supplement" element={<Supplement setSupplementDetail={setSupplementDetail}/>} />
-      <Route path="/cart" element={<Cart cartItems={cartItems}/>} />
-      <Route path="/supplement/:id" element={<DetailPage supplementDetail={supplementDetail} onAdd={onAdd}/>} />
+      <Route path="/cart" element={<Cart data={data}/>} />
+      <Route path="/supplement/:id" element={<DetailPage supplementDetail={supplementDetail} setCart={setCart}/>} />
       <Route path="/checkout" element={<Checkout/>} />
     </Routes>
   </>

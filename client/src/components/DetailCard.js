@@ -1,7 +1,7 @@
 import React from 'react';
 import { Typography, Stack} from '@mui/material';
 
-export default function DetailCard({supplementDetail, onAdd}) {
+export default function DetailCard({supplementDetail, setCart}) {
     const { image, product_name, cost, description} = supplementDetail;
 
     return(
@@ -19,9 +19,27 @@ export default function DetailCard({supplementDetail, onAdd}) {
           </Typography>
           <button
            onClick={() => {
-            console.log(supplementDetail)
-            onAdd(supplementDetail);
+            console.log(product_name)
+            console.log(image)
+            console.log(cost)
+            const newSupplement = {
+              product_name: product_name,
+              image: image,
+              cost: cost,
+            }
+            fetch('http://localhost:3001/create', {
+            method: "POST",
+            mode: 'cors',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(newSupplement)
+          })
+          .then(response => response.json()) 
+          .then(json => console.log(json));
+          console.log("added to the cart")
           }}
+        
           >
             Add item to cart
           </button>
