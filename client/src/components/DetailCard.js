@@ -1,7 +1,7 @@
 import React from 'react';
 import { Typography, Stack} from '@mui/material';
 
-export default function DetailCard({supplementDetail, setCart}) {
+export default function DetailCard({supplementDetail}) {
     const { image, product_name, cost, description} = supplementDetail;
 
     return(

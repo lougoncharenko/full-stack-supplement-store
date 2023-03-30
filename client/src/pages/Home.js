@@ -1,9 +1,12 @@
 import React from "react";
+import Benefits from "../components/Benefits";
+import Banner from "../components/Banner";
 
 export default function Home() {
     return (
         <section>
-            <h1>Home</h1>
+            <Banner />
+            <Benefits />
         </section>
     );
 

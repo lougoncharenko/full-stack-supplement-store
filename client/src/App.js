@@ -20,7 +20,9 @@ function App() {
   useEffect(()=> {
     console.log("data is fetching")
     async function fetchData() {
-    const res = await fetch("http://localhost:3001/data", {mode: "cors"})
+    const res = await fetch("http://localhost:3001/data", {
+      method : "GET",
+      mode: "cors"})
     const json = await res.json() 
     setData(json)
     console.log("data is fetching")

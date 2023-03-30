@@ -1,0 +1,51 @@
+
+    [
+    {
+        "id": 1,
+        "image":"",
+        "heading": "Whey Protein Powder",
+        "description":  "When it comes to bodybuilding supplements, whey protein powder is most people’s top pick—and for good reason. Not only is it rich in the amino acid leucine—an amino acid that plays a vital role in stimulating protein synthesis—it’s rapidly digested and easily absorbed by the body. In other words, it kicks off the muscle-building process, then provides everything the body needs to get the job done quickly and easily. What’s more, high-quality whey protein powder tastes good and tends to provide a lot of protein per dollar spent, so it’s convenient and cost-effective."
+    },
+    {
+        "id": 2,
+        "image":"",
+        "heading": "Casein Protein Powder",
+        "description": "Like whey protein powder, casein protein powder is a well-digested and well-absorbed weightlifting supplement that’s tasty, convenient, and rich in essential amino acids. That’s why most scientific research shows they’re more or less comparable when it comes to building muscle. Unlike whey, which causes a large spike in blood levels of amino acids immediately after you consume it, casein is digested slowly, which means it provides a steady, gradual release of amino acids into the blood for several hours. This is why many people use casein to speed up muscle recovery by consuming it before they go to bed."
+    },
+    {
+        "id": 3,
+        "image":"",
+        "heading": "Plant Protein Powder",
+        "description": " Despite what vegans often preach, veggies aren’t a great source of protein. Animal protein is superior to vegan protein for building muscle because it’s better absorbed by the body and contains much larger amounts of the amino acid leucine, which directly stimulates muscle growth. This is why it can be difficult to hit your daily protein target while following a plant-based diet. One solution to this problem is to simply eat more total protein, but this can be impractical and unpleasant (you can only get so much protein from peas before your bowels knuckle under). "
+    } ,
+    {
+        "id": 4,
+        "image":"",
+        "heading": "Creatine",
+        "description": "Creatine is a compound made up of the amino acids L-arginine, glycine, and methionine, and it’s one of the best natural supplements for muscle growth there is. In fact, the best muscle-building supplement after protein. Research shows supplementation with creatine Boosts muscle and strength gain, Improves anaerobic endurance, Reduces muscle damage and soreness from exercise, Increases the amount of glycogen your muscles can store, Helps preserve lean mass and strength while restricting calories"
+    },
+    {
+        "id": 5,
+        "image":"",
+        "heading": "Caffeine",
+        "description": "Many of us can’t shake the cobwebs without our morning cup of coffee, but this powerful compound is a lot more than a mere pick-me-up. As well as getting you revved up for your workouts, research shows that caffeine boosts metabolism, improves strength, promotes muscle endurance, and enhances anaerobic performance. In other words, it helps you get your head in the game, provides you the energy you need to push harder and longer in the gym, and it helps you burn a few extra calories to boot."
+    },
+    {
+        "id": 6,
+        "image":"",
+        "heading": "Citrulline Malate",
+        "description": "Citrulline malate is the amino acid L-citrulline bound with malic acid, a natural substance found in many fruits that’s involved in the creation of cellular energy. L-citrulline turns into another amino acid in the body known as L-arginine. This increases the production of a gas known as nitric oxide that widens blood vessels and improves blood flow, which in turn improves physical performance. In one study, participants who supplemented with L-citrulline were able to do around 53% more reps on the bench press than participants who took a placebo."
+    },
+    {
+        "id": 7,
+        "image":"",
+        "heading": "Beta-Alanine",
+        "description": "Beta-alanine is a naturally occurring amino acid that regulates the amount of the molecule carnosine that can be stored in your muscles. Carnosine reduces muscle acidity, which increases the amount of work that your muscles can do before they become fatigued. That’s why research shows that supplementing with beta-alanine reduces exercise-induced fatigue and increases the amount of work you can do in your workouts. In a study conducted at The College of New Jersey, researchers found that taking beta-alanine allowed participants to do an average of 22% more reps and lift 18% more total weight in each workout."
+    },
+    {
+        "id": 8,
+        "image":"",
+        "heading": "Branched-Chain Amino Acids",
+        "description": "Branched-chain amino acids (BCAAs), are a group of three amino acids that research shows are particularly helpful for building muscle: Leucine, Isoleucine, and Valine. There are quite a few studies that can be cited to convince you that BCAAs improve immune function, diminish fatigue, minimize exercise-induced muscle damage, and enhance post-workout muscle growth."
+    } 
+]
