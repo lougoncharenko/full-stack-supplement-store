@@ -1,7 +1,6 @@
 import React from "react"
 import { Link, useMatch, useResolvedPath } from "react-router-dom"
 import AppBar from '@mui/material/AppBar';
-import Button from '@mui/material/Button';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import '../styles/nav.css'
@@ -27,9 +26,6 @@ export default function Navbar() {
         </section>
          
       </nav>
-      <Button href="/sign-in" variant="outlined" sx={{ my: 1, mx: 1.5 }}>
-        Login
-      </Button>
     </Toolbar>
   </AppBar>
   )
